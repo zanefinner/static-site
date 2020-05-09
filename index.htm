@@ -3,132 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 4</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script>
-
-    </script>
+    <title>Zane Finner</title>
     <style>
         html, body{
+            background-color: rgb(245, 245, 245);
             margin: 0;
+            padding: 0;
             scroll-behavior: smooth;
         }
-        .navbar{
-            border-bottom: 1px solid rgb(255, 255, 255, 0.1);
-            background-image: url("jtron.jpg");
+        #crown{
+            margin-top: -10px;
+            margin-bottom: -10px;
         }
-        .jumbotron{
-            background-image: url("jtron.jpg");
-            padding: 200px;
-            padding-top: 256px; 
-            background-attachment: fixed;
-            border-radius: 0;
-            border-bottom-left-radius: 80px;
+        .left-nav{
+            position: fixed;
+            left: -220px;
+            top: 0;
+            height: 100%;
+            width: 265px;
+            background-color: #3f7cd6;
+            transition-duration: 0.4s;
+            z-index:99;
         }
-        .white-box{
-            background-color: rgba(0,0,0, 0.4);
-            padding: 60px;
-            border-radius: 13px;
+        .left-nav:hover{
+            left: 0;
         }
-        .spacer{
-            height: 97px;
+        .left-nav:hover .vert{
+            color: transparent;
         }
-        .highlight{
-            padding: 3px;
-            background-color: rgba(0, 162, 255, 0.2);
-            border-radius: 4px;
-            border: 1px solid rgb(0,162,255);
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li.st{
+            color: blue;
+            text-decoration: underline;
+        }
+        ul li{
+            text-align: center;
+            margin: 0;
+            left: 0;
+        }
+        a{
+            color: white;
+        }
+        h2{
+            text-align: center;
+        }
+        .content{
+            position: absolute;
+            left: 45px;
+            padding: 10px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: transparent;
+            transition-duration: 0.55s;
+        }
+        .left-nav:hover + .content{
+            left: 265px;
+        }
+        .vert{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: white;
+            font-family: monospace;
+            font-size: 45px;
+            width: 45px;
+            text-align: center;
+            transition-delay: 0.3s;
+            transition-duration: 0.2s;
+        }
+        .l-sp{
+            letter-spacing: 0.3rem;
+        }
+        .b-card{
+            background-color: #3f7cd6;
+            color: white;
+            padding: 10px;
+            border: 10px solid rgb(245, 245, 245);
+            border-radius: 30px;
+
+        }
+        .b-space{
+            margin-bottom: 94px;
         }
     </style>
 </head>
 <body>
-    <div class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a href="/" class="navbar-brand">Finner Freelance</a>
-            <div class="pull-right">
-                <ul class="nav navbar-nav navbar-dark">
-                    <li><a type="submit" href="#services" class="btn navbar-link" style="color: rgb(240, 240, 240)">SERVICES</a></li>
-                    <li><a type="submit" href="#about"class="btn navbar-link" style="color: rgb(240,240,240)">ABOUT</a></li>
-                    <li><a type="submit" href="#portfolio"class="btn navbar-link" style="color: rgb(240,240,240)">PORTFOLIO</a></li>
-                    <li><a type="submit" href="#contact"class="btn navbar-link" style="color: rgb(240,240,240)">CONTACT</a></li>
-                    <li><a type="submit" href="/blog"class="btn navbar-link" style="color: rgb(240,240,240)">BLOG</a></li>
-                </ul>     
-            </div>
+    <div class="left-nav">
+        <h2><a href="#">My Site</a></h2>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#socials">Social Links</a></li>
+        </ul>
+        <div class="vert" style="line-height: 3rem">
+            M<br>
+            E<br>
+            N<br>
+            U<br>
         </div>
     </div>
-    <div class="jumbotron text-center" style="color: white;">
-        <div class="container">
-            <div class="white-box">
-                <h2><i>Welcome to my Life!</i></h2>
+    <div class="content">
+        <div class="jumbotron text-center">
+            <div class="container">
+
+                <h2><i>Welcome to my Portfolio!</i></h2>
                 <h1>IT'S NICE TO MEET YOU</h1>
-                <a href="#" class="btn btn-outline-light">TELL ME MORE</a>
+                <a href="#services" class="btn btn-outline-dark">What I Do</a>
+
             </div>
         </div>
-    </div>
-    <div class="container">
-        <h1 class="text-center" id="services">
-            Services
-        </h1>
-        <h2>Web Applications / Web API's</h2>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h3 class="text-center">Tools I Use</h3>
+        <div class="container">
+            <h2 id="services" class="text-center l-sp">Services</h2>
+            <div class="row b-space">
+                <div class="col-12 col-md-4 b-card">
+                    <h3 class="text-center">PDF to Static Websites</h3>
+                    <hr>
+                    <p>Using HTML, JS, and CSS, I can convert PDF's into responsive and quick websites. I can also boost your site up in google using modern SEO practices.</p>
+                
+                </div>
+                <div id="crown" class="col-12 col-md-4 b-card">
+                    <h3 class="text-center">Web Applications</h3>
+                    <hr>
+                    <p>Using the PHP framework, Laravel, I create both simple and complex applications. My capabilities range from basic sites to webapps that create, update, reads, and deletes database records</p>
+                </div>
+                <div class="col-12 col-md-4 b-card">
+                    <h3 class="text-center">RESTful Web API's</h3>
+                    <hr>
+                    <p>With Laravel, I can create API's which create, update, delete, and read database data. This can be especially useful for multiplatform apps.</p>
+                
+                </div>
+            </div>
+            <h2 id="about" class="text-center l-sp">About</h2>
+            <div class="row b-space">
+                <div class="col-12 col-md-6">
+                    <h3 class="text-center">I'm an Artist</h3>
+                    <hr>
+                    <p>I am a server artist. Using common object-oriented programming principals along with the most popular PHP framework out there, 
+                        I craft the most elegant and smooth-running apps you can find.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="text-center">No Job is Too Big</h3>
+                    <hr>
+                    <p>
+                        In the workforce, there are generally two different kinds of employees: ones who like small simple jobs, and others who like large complex ones. I enjoy the larger ones because I love learning new things and adhering to new technologies.
+                    </p>
+                </div>
+            </div>
+            <h2 id="portfolio"class="text-center l-sp">Portfolio</h2>
+            <div class="row b-space">
+                <div class="col-12 col-md-6">
+                    <h3 class="text-center">
+                        Backend Projects
+                    </h3>
+                    <ul>
+                        <a target="_blank" href="https://github.com/zanefinner/assesment-certification-app"><li class="st">Get Certificates Online</li></a>
+                        <a target="_blank" href="https://github.com/zanefinner/cookbook-app"><li class="st">Cookbook with CRUD Operations</li></a>
 
-                <ul class="list-group">
-                    <li class="list-group-item">PHP <span class="highlight">7.3</span></li>
-                    <li class="list-group-item">Apache <span class="highlight">2</span></li>
-                    <li class="list-group-item">Laravel <span class="highlight">7.0</span></li>
-                    <li class="list-group-item">Nginx</li>
-                    <li class="list-group-item">MySQL</li>
-                    <li class="list-group-item">Linux</li>
-                    
-                </ul>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="text-center">
+                        Frontend/Design Projects
+                    </h3>
+                    <ul>
+                        <a target="_blank" href="https://github.com/zanefinner/30-day-frontend-challenge"><li class="st">30 Day Frontend Challenge</li></a>
+                    </ul>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-                <h3 class="text-center">How I Charge</h3>
-                <p>If I strongly believe in your idea, I will request equity. The amound varies on many things. If it's a good idea, but not something I'd want to be fully invested in, I will have an hourly rate.</p>
+            <h2 id="contact" class="text-center l-sp">Contact <span class="text-muted">not yet functional</span></span></h2>
+            <form class="text-center b-space">
+                <input type="text" name="email" placeholder="Email"/><br>
+                <textarea name="mail" placeholder="Message"></textarea>
+            </form>
+            <h2 id="socials"class="text-center l-sp">Social Links</h2>
+            <div class="row b-space">
+                <div style="margin: auto;" class="text-center">
+                    <a href="https://discord.gg/kz5BGze" target="_blank"><img src="discord.svg" alt="discord" height="32" /></a>
+                    <br>
+                    <span style="padding: 2px; border-radius: 4px;background-color: black; color: white;z" class="text-center">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></span>
+
+                </div>
             </div>
+            <p class="text-center">Zane Finner &copy 2020</p>
         </div>
-        <div class="spacer"></div>
-
-        <h1 class="text-center" id="about">
-            About Me
-        </h1>
-        <br>
-        <p class="text-center">
-            I am a server artist. Using common object-oriented programming principals along with the most popular PHP framework out there, 
-            I craft the most elegant and smooth-running apps you can find.
-        </p>
-        <div class="spacer"></div>
-
-        <h1 class="text-center" id="portfolio">
-            Portfolio
-        </h1>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h3 class="text-center">Laravel CRUD-based Apps</h3>
-                <p class="text-center text-muted"><i>Apps that create, update, read, and delete records</i></p>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="..">Professional Assessments App</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6">
-                <h3 class="text-center">Laravel RESTful API's</h3>
-                <p class="text-center text-muted"><i>Interfaces used to create, read, update, and delete data</i></p>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="..">Professional Assessments App</a></li>
-                </ul>
-            </div>
-        </div>
-        <a class="text-center" href="github.com/zanefinner">My Github</a>
-        <div class="spacer"></div>
-        <h1 class="text-center" id="contact">
-            Contact
-        </h1>
-        <p class="text-center">Email me <a href="mailto:zanefinnergm@gmail.com">here</a>.</p>
-    </div>
-    <div class="footer">
-        Zane Finner &copy 2020
     </div>
 </body>
 </html>
