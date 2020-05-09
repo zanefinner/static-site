@@ -123,6 +123,27 @@
             font-size: 1.3rem;
             color: black;
         }
+        form{
+            width: 100%;
+        }
+        form input{
+            width: 50%;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 2px solid #3f7cd6;
+            margin-bottom: 10px;
+            padding: 13px;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+        form textarea{
+            width: 50%;
+            border: 2px solid #3f7cd6;
+            border-radius: 2px;
+            height: 300px;
+            padding: 13px;
+            background-color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -214,9 +235,10 @@
                 </div>
             </div>
             <h2 id="contact" class="text-center l-sp">Contact <span class="text-muted">not yet functional</span></span></h2>
-            <form class="text-center b-space">
+            <form name="contact" class="text-center b-space" method="post">
                 <input type="text" name="email" placeholder="Email"/><br>
                 <textarea name="mail" placeholder="Message"></textarea>
+                <button class="btn btn-block" type="submit">Send!</button>
             </form>
             <h2 id="socials"class="text-center l-sp">Social Links</h2>
             <div class="row b-space">
