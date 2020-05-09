@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+
+    </script>
+    <style>
+        html, body{
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        .navbar{
+            border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+            background-image: url("jtron.jpg");
+        }
+        .jumbotron{
+            background-image: url("jtron.jpg");
+            padding: 200px;
+            padding-top: 256px; 
+            background-attachment: fixed;
+            border-radius: 0;
+            border-bottom-left-radius: 80px;
+        }
+        .white-box{
+            background-color: rgba(0,0,0, 0.4);
+            padding: 60px;
+            border-radius: 13px;
+        }
+        .spacer{
+            height: 97px;
+        }
+        .highlight{
+            padding: 3px;
+            background-color: rgba(0, 162, 255, 0.2);
+            border-radius: 4px;
+            border: 1px solid rgb(0,162,255);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a href="/" class="navbar-brand">Finner Freelance</a>
+            <div class="pull-right">
+                <ul class="nav navbar-nav navbar-dark">
+                    <li><a type="submit" href="#services" class="btn navbar-link" style="color: rgb(240, 240, 240)">SERVICES</a></li>
+                    <li><a type="submit" href="#about"class="btn navbar-link" style="color: rgb(240,240,240)">ABOUT</a></li>
+                    <li><a type="submit" href="#portfolio"class="btn navbar-link" style="color: rgb(240,240,240)">PORTFOLIO</a></li>
+                    <li><a type="submit" href="#contact"class="btn navbar-link" style="color: rgb(240,240,240)">CONTACT</a></li>
+                    <li><a type="submit" href="/blog"class="btn navbar-link" style="color: rgb(240,240,240)">BLOG</a></li>
+                </ul>     
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron text-center" style="color: white;">
+        <div class="container">
+            <div class="white-box">
+                <h2><i>Welcome to my Life!</i></h2>
+                <h1>IT'S NICE TO MEET YOU</h1>
+                <a href="#" class="btn btn-outline-light">TELL ME MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center" id="services">
+            Services
+        </h1>
+        <h2>Web Applications / Web API's</h2>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="text-center">Tools I Use</h3>
+
+                <ul class="list-group">
+                    <li class="list-group-item">PHP <span class="highlight">7.3</span></li>
+                    <li class="list-group-item">Apache <span class="highlight">2</span></li>
+                    <li class="list-group-item">Laravel <span class="highlight">7.0</span></li>
+                    <li class="list-group-item">Nginx</li>
+                    <li class="list-group-item">MySQL</li>
+                    <li class="list-group-item">Linux</li>
+                    
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="text-center">How I Charge</h3>
+                <p>If I strongly believe in your idea, I will request equity. The amound varies on many things. If it's a good idea, but not something I'd want to be fully invested in, I will have an hourly rate.</p>
+            </div>
+        </div>
+        <div class="spacer"></div>
+
+        <h1 class="text-center" id="about">
+            About Me
+        </h1>
+        <br>
+        <p class="text-center">
+            I am a server artist. Using common object-oriented programming principals along with the most popular PHP framework out there, 
+            I craft the most elegant and smooth-running apps you can find.
+        </p>
+        <div class="spacer"></div>
+
+        <h1 class="text-center" id="portfolio">
+            Portfolio
+        </h1>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="text-center">Laravel CRUD-based Apps</h3>
+                <p class="text-center text-muted"><i>Apps that create, update, read, and delete records</i></p>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="..">Professional Assessments App</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="text-center">Laravel RESTful API's</h3>
+                <p class="text-center text-muted"><i>Interfaces used to create, read, update, and delete data</i></p>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="..">Professional Assessments App</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="text-center" href="github.com/zanefinner">My Github</a>
+        <div class="spacer"></div>
+        <h1 class="text-center" id="contact">
+            Contact
+        </h1>
+        <p class="text-center">Email me <a href="mailto:zanefinnergm@gmail.com">here</a>.</p>
+    </div>
+    <div class="footer">
+        Zane Finner &copy 2020
+    </div>
+</body>
+</html>
