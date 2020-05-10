@@ -93,26 +93,8 @@
         .b-space{
             margin-bottom: 94px;
         }
-        @media only screen and (max-width: 600px) {
-            .left-nav{
-                position: fixed;
-                left: -110px;
-                top: 0;
-                height: 100%;
-                width: 155px;
-                background-color: #3f7cd6;
-                transition-duration: 0.4s;
-                z-index:99;
-            }
-            .left-nav:hover + .content{
-            left: 165px;
-            }
-            form{
-                width: 100%;
-            }
-            input, textarea{
-                width: 100%;
-            }
+        .b-small-space{
+            margin-bottom: 21px;
         }
         .jumbotron{
             border-radius: 13px;
@@ -149,6 +131,42 @@
             height: 300px;
             padding: 13px;
             background-color: transparent;
+        }
+        @media only screen and (max-width: 600px) {
+            .left-nav{
+                position: fixed;
+                left: -110px;
+                top: 0;
+                height: 100%;
+                width: 155px;
+                background-color: #3f7cd6;
+                transition-duration: 0.4s;
+                z-index:99;
+            }
+            .left-nav:hover + .content{
+            left: 165px;
+            }
+            form{
+            width: 100%;
+        }
+        form input{
+            width: 100%;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 2px solid #3f7cd6;
+            margin-bottom: 10px;
+            padding: 13px;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+        form textarea{
+            width: 100%;
+            border: 2px solid #3f7cd6;
+            border-radius: 2px;
+            height: 300px;
+            padding: 13px;
+            background-color: transparent;
+        }
         }
     </style>
 </head>
@@ -206,7 +224,7 @@
             <h2 id="about" class="text-center l-sp">About</h2>
             <div class="row b-space">
                 <div class="col-12 col-md-6">
-                    <h3 class="text-center">I'm an Artist</h3>
+                    <h3 class="text-center" class="b-small-space">I'm an Artist</h3>
                     <hr>
                     <p>I am a server artist. Using common object-oriented programming principals along with the most popular PHP framework out there, 
                         I craft the most elegant and smooth-running apps you can find.</p>
@@ -225,7 +243,7 @@
                     <h3 class="text-center">
                         Backend Projects
                     </h3>
-                    <ul>
+                    <ul class="b-small-space">
                         <a target="_blank" href="https://github.com/zanefinner/assesment-certification-app"><li class="st">Get Certificates Online</li></a>
                         <a target="_blank" href="https://github.com/zanefinner/cookbook-app"><li class="st">Cookbook with CRUD Operations</li></a>
 
